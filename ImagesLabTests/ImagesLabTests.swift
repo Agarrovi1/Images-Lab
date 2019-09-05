@@ -40,7 +40,17 @@ class ImagesLabTests: XCTestCase {
                 XCTAssertTrue(comic.count != 0, "expected comic got nil")
             }
         }
-        
     }
-
+    func testImageHelper() {
+    let urlString = "https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg"
+        ImageHelper.shared.fetchImage(urlString: urlString) {
+            (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let image):
+                XCTAssertTrue(image != UIImage(), "expected image got blank image")
+            }
+        }
+    }
 }
