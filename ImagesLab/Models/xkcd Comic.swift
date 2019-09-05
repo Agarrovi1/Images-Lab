@@ -12,13 +12,12 @@ struct XkcdComic: Codable {
     let safe_title: String
     let img: String
     
-    static func getComic(from data: Data) -> XkcdComic? {
+    static func getComic(from data: Data,completionHandler: @escaping (Result<XkcdComic,AppError>) -> ()) {
         do {
             let comic = try JSONDecoder().decode(XkcdComic.self, from: data)
-            return comic
+            completionHandler(.success(comic))
         } catch {
-            print(error)
+            completionHandler(.failure(.badJSONError))
         }
-        return nil
     }
 }
