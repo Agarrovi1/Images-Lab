@@ -13,6 +13,9 @@
 		4D51701723218B18002297A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D51701623218B18002297A1 /* Assets.xcassets */; };
 		4D51701A23218B18002297A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D51701823218B18002297A1 /* LaunchScreen.storyboard */; };
 		4D51702523218B18002297A1 /* ImagesLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51702423218B18002297A1 /* ImagesLabTests.swift */; };
+		4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703223218F7A002297A1 /* xkcd Comic.swift */; };
+		4D517035232190B2002297A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D517034232190B2002297A1 /* NetworkManager.swift */; };
+		4D5170372321911B002297A1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170362321911B002297A1 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		4D51702023218B18002297A1 /* ImagesLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagesLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D51702423218B18002297A1 /* ImagesLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesLabTests.swift; sourceTree = "<group>"; };
 		4D51702623218B18002297A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D51703223218F7A002297A1 /* xkcd Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "xkcd Comic.swift"; sourceTree = "<group>"; };
+		4D517034232190B2002297A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4D5170362321911B002297A1 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,11 @@
 		4D51700E23218B16002297A1 /* ImagesLab */ = {
 			isa = PBXGroup;
 			children = (
-				4D51700F23218B16002297A1 /* AppDelegate.swift */,
-				4D51701123218B16002297A1 /* ViewController.swift */,
+				4D51702F23218F29002297A1 /* Supporting Files */,
+				4D51703023218F3D002297A1 /* View Controllers */,
+				4D51703123218F4E002297A1 /* Models */,
 				4D51701323218B16002297A1 /* Main.storyboard */,
 				4D51701623218B18002297A1 /* Assets.xcassets */,
-				4D51701823218B18002297A1 /* LaunchScreen.storyboard */,
 				4D51701B23218B18002297A1 /* Info.plist */,
 			);
 			path = ImagesLab;
@@ -94,6 +100,33 @@
 				4D51702623218B18002297A1 /* Info.plist */,
 			);
 			path = ImagesLabTests;
+			sourceTree = "<group>";
+		};
+		4D51702F23218F29002297A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D51700F23218B16002297A1 /* AppDelegate.swift */,
+				4D51701823218B18002297A1 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D51703023218F3D002297A1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D51701123218B16002297A1 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4D51703123218F4E002297A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D51703223218F7A002297A1 /* xkcd Comic.swift */,
+				4D517034232190B2002297A1 /* NetworkManager.swift */,
+				4D5170362321911B002297A1 /* AppError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D517035232190B2002297A1 /* NetworkManager.swift in Sources */,
+				4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */,
+				4D5170372321911B002297A1 /* AppError.swift in Sources */,
 				4D51701223218B16002297A1 /* ViewController.swift in Sources */,
 				4D51701023218B16002297A1 /* AppDelegate.swift in Sources */,
 			);
