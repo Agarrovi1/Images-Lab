@@ -58,6 +58,7 @@ class ComicViewController: UIViewController {
             case .success(let comic):
                 DispatchQueue.main.async {
                     self.currentComic = comic
+                    self.comicStepper.value = Double(self.currentComic.num)
                     self.loadPicture()
                 }
             }
