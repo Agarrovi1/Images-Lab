@@ -11,6 +11,11 @@ struct XkcdComic: Codable {
     let num: Int
     let safe_title: String
     let img: String
+    init() {
+        num = Int()
+        safe_title = String()
+        img = String()
+    }
     
     static func getComic(from urlString: String,completionHandler: @escaping (Result<XkcdComic,AppError>) -> ()) {
         NetworkManager.shared.fetchData(urlString: urlString) { (result) in
@@ -26,6 +31,5 @@ struct XkcdComic: Codable {
                 completionHandler(.failure(error))
             }
         }
-        
     }
 }
