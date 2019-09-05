@@ -30,14 +30,14 @@ class ImagesLabTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    func testXkcdComic() {
+    func testXkcdData() {
         let urlString = "https://xkcd.com/1/info.0.json"
         NetworkManager.shared.fetchData(urlString: urlString) { (result) in
             switch result {
             case .failure(let error):
                 print(error)
-            case .success(let comic):
-                XCTAssertTrue(comic.count != 0, "expected comic got nil")
+            case .success(let data):
+                XCTAssertTrue(data.count != 0, "expected comic got nil")
             }
         }
     }
