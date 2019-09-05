@@ -16,6 +16,9 @@
 		4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703223218F7A002297A1 /* xkcd Comic.swift */; };
 		4D517035232190B2002297A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D517034232190B2002297A1 /* NetworkManager.swift */; };
 		4D5170372321911B002297A1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170362321911B002297A1 /* AppError.swift */; };
+		4D51703823219678002297A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D517034232190B2002297A1 /* NetworkManager.swift */; };
+		4D5170392321967B002297A1 /* xkcd Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703223218F7A002297A1 /* xkcd Comic.swift */; };
+		4D51703A2321967E002297A1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170362321911B002297A1 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D51703A2321967E002297A1 /* AppError.swift in Sources */,
+				4D5170392321967B002297A1 /* xkcd Comic.swift in Sources */,
+				4D51703823219678002297A1 /* NetworkManager.swift in Sources */,
 				4D51702523218B18002297A1 /* ImagesLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
