@@ -26,6 +26,7 @@
 		4D5170782322EE0F002297A1 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703B232198C8002297A1 /* ImageHelper.swift */; };
 		4D5170792322EE14002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
 		4D51707B23230015002297A1 /* PokeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */; };
+		4D51707D2323239A002297A1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707C2323239A002297A1 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4D5170732322DBED002297A1 /* PokemonCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCards.swift; sourceTree = "<group>"; };
 		4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardTableViewCell.swift; sourceTree = "<group>"; };
 		4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDetailViewController.swift; sourceTree = "<group>"; };
+		4D51707C2323239A002297A1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				4D51703223218F7A002297A1 /* xkcd Comic.swift */,
 				4D5170732322DBED002297A1 /* PokemonCards.swift */,
+				4D51707C2323239A002297A1 /* Users.swift */,
 				4D517034232190B2002297A1 /* NetworkManager.swift */,
 				4D51703B232198C8002297A1 /* ImageHelper.swift */,
 				4D5170362321911B002297A1 /* AppError.swift */,
@@ -268,6 +271,7 @@
 				4D51701023218B16002297A1 /* AppDelegate.swift in Sources */,
 				4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */,
 				4D51703C232198C8002297A1 /* ImageHelper.swift in Sources */,
+				4D51707D2323239A002297A1 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
