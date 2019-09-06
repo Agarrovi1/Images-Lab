@@ -82,6 +82,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SOw-0y-LFc"/>
                         <segue destination="hWf-5x-zSG" kind="relationship" relationship="viewControllers" id="sC3-l9-Bjv"/>
+                        <segue destination="DKB-ac-YIx" kind="relationship" relationship="viewControllers" id="Ur8-rk-Hty"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6b-c2-nMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,6 +225,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFn-KD-9fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="829.6875"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="Mh7-nq-bvS">
+            <objects>
+                <viewController id="DKB-ac-YIx" customClass="UsersViewController" customModule="ImagesLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zvG-ma-nVf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gfW-3B-65E">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AEY-AB-kRk">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AEY-AB-kRk" id="tB0-Eb-L1R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gfW-3B-65E" firstAttribute="leading" secondItem="ugg-CE-dep" secondAttribute="leading" id="12l-rx-AnW"/>
+                            <constraint firstItem="ugg-CE-dep" firstAttribute="bottom" secondItem="gfW-3B-65E" secondAttribute="bottom" id="Ftt-FM-j2G"/>
+                            <constraint firstItem="gfW-3B-65E" firstAttribute="top" secondItem="ugg-CE-dep" secondAttribute="top" id="bpn-o2-svV"/>
+                            <constraint firstItem="ugg-CE-dep" firstAttribute="trailing" secondItem="gfW-3B-65E" secondAttribute="trailing" id="qdQ-4Q-3Iq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ugg-CE-dep"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Users" id="7Nc-kR-TQn"/>
+                    <connections>
+                        <outlet property="usersTableView" destination="gfW-3B-65E" id="ie8-WB-0S6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ay-0t-Erd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="1528"/>
         </scene>
     </scenes>
 </document>

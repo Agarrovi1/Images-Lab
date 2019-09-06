@@ -27,6 +27,7 @@
 		4D5170792322EE14002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
 		4D51707B23230015002297A1 /* PokeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */; };
 		4D51707D2323239A002297A1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707C2323239A002297A1 /* Users.swift */; };
+		4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707E2323288B002297A1 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardTableViewCell.swift; sourceTree = "<group>"; };
 		4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDetailViewController.swift; sourceTree = "<group>"; };
 		4D51707C2323239A002297A1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		4D51707E2323288B002297A1 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				4D51701123218B16002297A1 /* ComicViewController.swift */,
 				4D5170712322DB39002297A1 /* PokemonViewController.swift */,
 				4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */,
+				4D51707E2323288B002297A1 /* UsersViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D517035232190B2002297A1 /* NetworkManager.swift in Sources */,
+				4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */,
 				4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */,
 				4D5170372321911B002297A1 /* AppError.swift in Sources */,
 				4D5170742322DBED002297A1 /* PokemonCards.swift in Sources */,
