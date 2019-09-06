@@ -17,6 +17,7 @@ class ComicViewController: UIViewController {
     var currentComic = XkcdComic() {
         didSet {
             loadPicture()
+            comicStepper.value = Double(currentComic.num)
             comicTextField.placeholder = " \(currentComic.num): \(currentComic.safe_title)"
             if currentComic.num == recentComic.num {
                 recentButton.isEnabled = false
@@ -58,7 +59,6 @@ class ComicViewController: UIViewController {
             case .success(let comic):
                 DispatchQueue.main.async {
                     self.currentComic = comic
-                    self.comicStepper.value = Double(self.currentComic.num)
                     self.loadPicture()
                 }
             }
@@ -93,9 +93,29 @@ class ComicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCurrentComic()
+        comicTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
 
 }
 
+extension ComicViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let text = comicTextField.text
+        if let text = text, let num = Int(text) {
+            switch num {
+            case 1...recentComic.num:
+                let newUrl = "https://xkcd.com/\(num)/info.0.json"
+                updateComic(with: newUrl)
+                comicTextField.text = ""
+                return true
+            default:
+                comicTextField.text = ""
+                return true
+            }
+        }
+        comicTextField.text = ""
+        return true
+    }
+}
