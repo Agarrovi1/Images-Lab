@@ -25,6 +25,7 @@
 		4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */; };
 		4D5170782322EE0F002297A1 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703B232198C8002297A1 /* ImageHelper.swift */; };
 		4D5170792322EE14002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
+		4D51707B23230015002297A1 /* PokeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4D5170712322DB39002297A1 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		4D5170732322DBED002297A1 /* PokemonCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCards.swift; sourceTree = "<group>"; };
 		4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardTableViewCell.swift; sourceTree = "<group>"; };
+		4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				4D51701123218B16002297A1 /* ComicViewController.swift */,
 				4D5170712322DB39002297A1 /* PokemonViewController.swift */,
+				4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				4D5170742322DBED002297A1 /* PokemonCards.swift in Sources */,
 				4D5170722322DB39002297A1 /* PokemonViewController.swift in Sources */,
 				4D51701223218B16002297A1 /* ComicViewController.swift in Sources */,
+				4D51707B23230015002297A1 /* PokeCardDetailViewController.swift in Sources */,
 				4D51701023218B16002297A1 /* AppDelegate.swift in Sources */,
 				4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */,
 				4D51703C232198C8002297A1 /* ImageHelper.swift in Sources */,

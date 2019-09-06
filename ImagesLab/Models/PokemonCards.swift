@@ -32,9 +32,16 @@ struct PokemonCards: Codable {
 struct Cards: Codable {
     let name: String
     let supertype: String
+    let subtype: String
+    let types: [String]?
+    let weaknesses: [Weakness]?
     let imageUrl: String
     let imageUrlHiRes: String
     let set: String
+}
+struct Weakness: Codable {
+    let type: String
+    let value: String
 }
 
 func filterCards(containing str:String, arr: [Cards]) -> [Cards] {

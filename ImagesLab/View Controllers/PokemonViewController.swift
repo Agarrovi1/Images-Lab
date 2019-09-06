@@ -56,6 +56,11 @@ class PokemonViewController: UIViewController {
         pokemonTableView.delegate = self
         searchBar.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? PokeCardDetailViewController, let indexPath = pokemonTableView.indexPathForSelectedRow else {return}
+        destination.pokemonCard = cardSearchResult[indexPath.row]
+    }
 
 }
 
