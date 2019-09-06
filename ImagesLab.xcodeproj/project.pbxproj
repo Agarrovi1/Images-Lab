@@ -22,6 +22,7 @@
 		4D51703C232198C8002297A1 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703B232198C8002297A1 /* ImageHelper.swift */; };
 		4D5170722322DB39002297A1 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170712322DB39002297A1 /* PokemonViewController.swift */; };
 		4D5170742322DBED002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
+		4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4D51703B232198C8002297A1 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		4D5170712322DB39002297A1 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		4D5170732322DBED002297A1 /* PokemonCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCards.swift; sourceTree = "<group>"; };
+		4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4D51702F23218F29002297A1 /* Supporting Files */,
+				4D5170752322E29B002297A1 /* Views */,
 				4D51703023218F3D002297A1 /* View Controllers */,
 				4D51703123218F4E002297A1 /* Models */,
 				4D51701323218B16002297A1 /* Main.storyboard */,
@@ -139,6 +142,14 @@
 				4D5170362321911B002297A1 /* AppError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4D5170752322E29B002297A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				4D5170722322DB39002297A1 /* PokemonViewController.swift in Sources */,
 				4D51701223218B16002297A1 /* ComicViewController.swift in Sources */,
 				4D51701023218B16002297A1 /* AppDelegate.swift in Sources */,
+				4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */,
 				4D51703C232198C8002297A1 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
