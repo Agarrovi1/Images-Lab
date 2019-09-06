@@ -53,4 +53,24 @@ class ImagesLabTests: XCTestCase {
             }
         }
     }
+    func testPokeImage() {
+        var card = Cards(name: "", supertype: "", imageUrl: "", imageUrlHiRes: "", set: "")
+        
+        PokemonCards.getCards { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let cards):
+                card = cards[0]
+            }
+        }
+        ImageHelper.shared.fetchImage(urlString: card.imageUrl) { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let image):
+                XCTAssertTrue(image != UIImage(), "no image")
+            }
+        }
+    }
 }

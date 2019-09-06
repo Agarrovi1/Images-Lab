@@ -23,6 +23,8 @@
 		4D5170722322DB39002297A1 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170712322DB39002297A1 /* PokemonViewController.swift */; };
 		4D5170742322DBED002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
 		4D5170772322E2BD002297A1 /* PokeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */; };
+		4D5170782322EE0F002297A1 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51703B232198C8002297A1 /* ImageHelper.swift */; };
+		4D5170792322EE14002297A1 /* PokemonCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170732322DBED002297A1 /* PokemonCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -270,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D51703A2321967E002297A1 /* AppError.swift in Sources */,
+				4D5170782322EE0F002297A1 /* ImageHelper.swift in Sources */,
 				4D5170392321967B002297A1 /* xkcd Comic.swift in Sources */,
 				4D51703823219678002297A1 /* NetworkManager.swift in Sources */,
 				4D51702523218B18002297A1 /* ImagesLabTests.swift in Sources */,
+				4D5170792322EE14002297A1 /* PokemonCards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

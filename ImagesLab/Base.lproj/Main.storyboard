@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WgH-T8-TvM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Comic View Controller-->
+        <!--Comics-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ComicViewController" customModule="ImagesLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,6 +58,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Comics" id="0GY-bv-j7g"/>
                     <connections>
                         <outlet property="comicImageView" destination="qj3-gp-pWV" id="J1o-fM-daT"/>
                         <outlet property="comicStepper" destination="Nrc-zk-OBc" id="ij5-nJ-siZ"/>
@@ -69,7 +70,25 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
         </scene>
-        <!--Pokemon View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z4I-5g-OX6">
+            <objects>
+                <tabBarController id="WgH-T8-TvM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EYr-VP-Ash">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SOw-0y-LFc"/>
+                        <segue destination="ETd-iD-VZy" kind="relationship" relationship="viewControllers" id="sC3-l9-Bjv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6b-c2-nMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="378"/>
+        </scene>
+        <!--Pokemon Cards-->
         <scene sceneID="Rhi-3D-Qkf">
             <objects>
                 <viewController id="ETd-iD-VZy" customClass="PokemonViewController" customModule="ImagesLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h72-ZG-R6N">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="A8j-NF-znT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -93,11 +112,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="443.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tb-jx-Nu0">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0tb-jx-Nu0">
                                                     <rect key="frame" x="20" y="11" width="374" height="422"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0tb-jx-Nu0" firstAttribute="top" secondItem="rc3-fm-HNQ" secondAttribute="top" constant="11" id="2ob-ud-pRP"/>
+                                                <constraint firstAttribute="bottom" secondItem="0tb-jx-Nu0" secondAttribute="bottom" constant="10.5" id="Bc5-oH-0ik"/>
+                                                <constraint firstItem="0tb-jx-Nu0" firstAttribute="leading" secondItem="rc3-fm-HNQ" secondAttribute="leading" constant="20" id="WCD-mM-Uyb"/>
+                                                <constraint firstAttribute="trailing" secondItem="0tb-jx-Nu0" secondAttribute="trailing" constant="20" id="hH9-gd-JmF"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="pokeCardImage" destination="0tb-jx-Nu0" id="HGR-IM-7zr"/>
@@ -115,6 +139,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oCb-CY-eI5"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pokemon Cards" id="kgM-ao-rQX"/>
+                    <connections>
+                        <outlet property="pokemonTableView" destination="h72-ZG-R6N" id="tdP-JI-N9i"/>
+                        <outlet property="searchBar" destination="A8j-NF-znT" id="Nxv-ej-1Sc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqF-Dj-en0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
