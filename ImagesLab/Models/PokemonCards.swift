@@ -36,3 +36,7 @@ struct Cards: Codable {
     let imageUrlHiRes: String
     let set: String
 }
+
+func filterCards(containing str:String, arr: [Cards]) -> [Cards] {
+    return arr.filter({$0.name.lowercased().contains(str.lowercased())})
+}

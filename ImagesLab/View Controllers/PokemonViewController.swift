@@ -19,6 +19,22 @@ class PokemonViewController: UIViewController {
             }
         }
     }
+    
+    var cardSearchResult: [Cards] {
+        get {
+            guard let searchString = searchString else {return cards}
+            guard  searchString != "" else {return cards}
+            return filterCards(containing: searchString, arr: cards)
+        }
+    }
+    
+    var searchString: String? = nil {
+        didSet {
+            DispatchQueue.main.async {
+                self.pokemonTableView.reloadData()
+            }
+        }
+    }
 
     private func loadData() {
         DispatchQueue.main.async {
@@ -38,20 +54,19 @@ class PokemonViewController: UIViewController {
         loadData()
         pokemonTableView.dataSource = self
         pokemonTableView.delegate = self
+        searchBar.delegate = self
     }
 
 }
 
 extension PokemonViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cards.count
+        return cardSearchResult.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = pokemonTableView.dequeueReusableCell(withIdentifier: "pokeCardCell", for: indexPath) as? PokeCardTableViewCell else {return UITableViewCell()}
-        
-    
-            let aCard = self.cards[indexPath.row]
+        let aCard = cardSearchResult[indexPath.row]
         ImageHelper.shared.fetchImage(urlString: aCard.imageUrl) { (result) in
             DispatchQueue.main.async {
                 switch result {
@@ -64,12 +79,16 @@ extension PokemonViewController: UITableViewDataSource {
         }
         return cell
     }
-    
-    
 }
 
 extension PokemonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 450
+    }
+}
+
+extension PokemonViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchString = searchBar.text
     }
 }
