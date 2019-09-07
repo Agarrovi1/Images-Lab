@@ -29,6 +29,7 @@
 		4D51707D2323239A002297A1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707C2323239A002297A1 /* Users.swift */; };
 		4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707E2323288B002297A1 /* UsersViewController.swift */; };
 		4D5170812323299C002297A1 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170802323299C002297A1 /* UsersTableViewCell.swift */; };
+		4D5170832323322B002297A1 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170822323322B002297A1 /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4D51707C2323239A002297A1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4D51707E2323288B002297A1 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		4D5170802323299C002297A1 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		4D5170822323322B002297A1 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				4D5170712322DB39002297A1 /* PokemonViewController.swift */,
 				4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */,
 				4D51707E2323288B002297A1 /* UsersViewController.swift */,
+				4D5170822323322B002297A1 /* UserDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5170832323322B002297A1 /* UserDetailViewController.swift in Sources */,
 				4D517035232190B2002297A1 /* NetworkManager.swift in Sources */,
 				4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */,
 				4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */,

@@ -37,7 +37,10 @@ class UsersViewController: UIViewController {
         usersTableView.dataSource = self
         usersTableView.delegate = self
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? UserDetailViewController, let indexPath = usersTableView.indexPathForSelectedRow else {return}
+        destination.randomUser = users[indexPath.row]
+    }
 
 }
 
