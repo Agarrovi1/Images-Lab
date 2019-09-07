@@ -41,12 +41,12 @@ class ComicViewController: UIViewController {
     }
     
     @IBAction func stepperStepped(_ sender: UIStepper) {
-        let newUrl = "https://xkcd.com/\(Int(sender.value))/info.0.json"
+        let newUrl = ComicUrlHolder().getComicUrlFromDouble(num:sender.value)
         updateComic(with: newUrl)
     }
     @IBAction func randomButtonPressed(_ sender: UIButton) {
         let randomNum = Int.random(in: 1...recentComic.num)
-        let newUrl = "https://xkcd.com/\(randomNum)/info.0.json"
+        let newUrl = ComicUrlHolder().getSpecificComicUrl(num: randomNum)
         updateComic(with: newUrl)
     }
     
@@ -65,7 +65,7 @@ class ComicViewController: UIViewController {
         }
     }
     func loadCurrentComic() {
-        let recentUrl = "https://xkcd.com/info.0.json"
+        let recentUrl = ComicUrlHolder().recentUrl
         XkcdComic.getComic(from: recentUrl) { (result) in
             switch result {
             case .failure(let error):
@@ -106,7 +106,7 @@ extension ComicViewController: UITextFieldDelegate {
         if let text = text, let num = Int(text) {
             switch num {
             case 1...recentComic.num:
-                let newUrl = "https://xkcd.com/\(num)/info.0.json"
+                let newUrl = ComicUrlHolder().getSpecificComicUrl(num: num)
                 updateComic(with: newUrl)
                 comicTextField.text = ""
                 return true

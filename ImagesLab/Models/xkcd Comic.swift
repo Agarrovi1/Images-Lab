@@ -33,3 +33,13 @@ struct XkcdComic: Codable {
         }
     }
 }
+
+class ComicUrlHolder {
+    let recentUrl = "https://xkcd.com/info.0.json"
+    func getSpecificComicUrl(num:Int) -> String {
+        return "https://xkcd.com/\(num)/info.0.json"
+    }
+    func getComicUrlFromDouble(num:Double) -> String {
+        return "https://xkcd.com/\(Int(num))/info.0.json"
+    }
+}
