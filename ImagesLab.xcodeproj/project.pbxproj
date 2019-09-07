@@ -28,6 +28,7 @@
 		4D51707B23230015002297A1 /* PokeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */; };
 		4D51707D2323239A002297A1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707C2323239A002297A1 /* Users.swift */; };
 		4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D51707E2323288B002297A1 /* UsersViewController.swift */; };
+		4D5170812323299C002297A1 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5170802323299C002297A1 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4D51707A23230015002297A1 /* PokeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDetailViewController.swift; sourceTree = "<group>"; };
 		4D51707C2323239A002297A1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4D51707E2323288B002297A1 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		4D5170802323299C002297A1 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5170762322E2BD002297A1 /* PokeCardTableViewCell.swift */,
+				4D5170802323299C002297A1 /* UsersTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				4D517035232190B2002297A1 /* NetworkManager.swift in Sources */,
 				4D51707F2323288B002297A1 /* UsersViewController.swift in Sources */,
 				4D51703323218F7A002297A1 /* xkcd Comic.swift in Sources */,
+				4D5170812323299C002297A1 /* UsersTableViewCell.swift in Sources */,
 				4D5170372321911B002297A1 /* AppError.swift in Sources */,
 				4D5170742322DBED002297A1 /* PokemonCards.swift in Sources */,
 				4D5170722322DB39002297A1 /* PokemonViewController.swift in Sources */,
